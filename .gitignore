@@ -1,0 +1,51 @@
+# C++ objects and libs
+
+*.slo
+*.lo
+*.o
+*.a
+*.la
+*.lai
+*.so
+*.dll
+*.dylib
+
+# Qt-es
+
+/.qmake.cache
+/.qmake.stash
+*.pro.user
+*.pro.user.*
+*.moc
+moc_*.cpp
+qrc_*.cpp
+ui_*.h
+Makefile*
+*-build-*
+/moc/
+/obj/
+/qrc/
+/.vs/
+*.vcxproj.user
+*.autosave
+
+# Build output, with the checked-in Visual Studio custom-build input files.
+/debug/*
+!/debug/qmlcache_loader.cpp.cbt
+/release/*
+!/release/qmlcache_loader.cpp.cbt
+/temp/*
+!/temp/moc/
+/temp/moc/*
+!/temp/moc/moc_predefs.h.cbt
+/DESTDIR/
+/cloc-2.00.exe
+
+# Local settings, logs and downloaded maps.
+app_config.ini
+appconfig.inf
+map_config.ini
+logs/
+maps/
+
+

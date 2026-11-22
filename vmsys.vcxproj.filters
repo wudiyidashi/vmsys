@@ -1,0 +1,1019 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts;xlf</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts;xlf</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Distribution Files">
+      <UniqueIdentifier>{B83CAF91-C7BF-462F-B76C-EA11631F866C}</UniqueIdentifier>
+      <Extensions>*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Distribution Files">
+      <UniqueIdentifier>{B83CAF91-C7BF-462F-B76C-EA11631F866C}</UniqueIdentifier>
+      <Extensions>*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Qml\ArrowHeads.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Robokit\BoardControl\Autodoor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Robokit\BoardControl\Battery.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Robokit\BoardControl\BoardManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Misc\CRC.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Mission\Charge.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Qml\CppBridge.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\IO\DataProcessUtl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Qml\EleCell.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Mission\Jack.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Robokit\BoardControl\Lift.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Misc\Log.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Robokit\Map\MapManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Robokit\Map\MapUnit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Robokit\BoardControl\McuBoard.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Mission\MissionBase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Mission\MissionManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Misc\ModuleManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Misc\Music.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Misc\QIniConfig.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Robokit\RobokitApi\RobProtocol.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Robokit\RobokitManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Robokit\RobokitApi\RobotBase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Robokit\RobokitApi\RobotConfig.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Robokit\RobokitApi\RobotControl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Mission\RobotMove.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Mission\RobotMoveList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Robokit\RobokitApi\RobotStatus.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Robokit\RobokitApi\RobotTask.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Server\StatusManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\IO\TcpSocketClient.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\IO\TcpSocketServer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Misc\ThemeManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\IO\ThreadHandle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Misc\TimerEvents.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Misc\Translator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Misc\Utilities.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\AppInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="src\Qml\ArrowHeads.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\Robokit\BoardControl\Autodoor.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\Robokit\BoardControl\Battery.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\Robokit\BoardControl\BoardManager.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="src\Misc\CRC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Mission\Charge.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="src\Qml\CppBridge.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="src\IO\DataProcessUtl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DataTypes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="src\Qml\EleCell.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="src\Mission\Jack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="src\Robokit\BoardControl\Lift.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\Misc\Log.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="src\Robokit\Map\MapElements.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="src\Robokit\Map\MapManager.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\Robokit\Map\MapUnit.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\Robokit\BoardControl\McuBoard.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\Mission\MissionBase.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\Mission\MissionManager.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\Misc\ModuleManager.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\Misc\Music.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="src\Misc\QIniConfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="src\Robokit\RobokitApi\RobProtocol.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\Robokit\RobokitManager.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\Robokit\RobokitApi\RobotBase.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\Robokit\RobokitApi\RobotConfig.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\Robokit\RobokitApi\RobotControl.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="src\Mission\RobotMove.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Mission\RobotMoveList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="src\Robokit\RobokitApi\RobotStatus.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\Robokit\RobokitApi\RobotTask.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="src\Robokit\RobokitApi\SCHeadData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="src\Server\StatusManager.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\IO\TcpSocketClient.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\IO\TcpSocketServer.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\Misc\ThemeManager.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="src\IO\ThreadHandle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="src\Misc\TimerEvents.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\Misc\Translator.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\Misc\Utilities.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="debug\assets_qml_Control_AgvAttribute_qml.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\assets_qml_Control_AgvAttribute_qml.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\assets_qml_Control_Arrow_qml.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\assets_qml_Control_Arrow_qml.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\assets_qml_Control_Battery_qml.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\assets_qml_Control_Battery_qml.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\assets_qml_Control_BoardControlButton_qml.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\assets_qml_Control_BoardControlButton_qml.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\assets_qml_Control_ButtonAndEdit_qml.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\assets_qml_Control_ButtonAndEdit_qml.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\assets_qml_Control_ConnectionView_qml.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\assets_qml_Control_ConnectionView_qml.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\assets_qml_Control_FlatSwitch_qml.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\assets_qml_Control_FlatSwitch_qml.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\assets_qml_Control_GuideBar_qml.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\assets_qml_Control_GuideBar_qml.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\assets_qml_Control_MapControl_qml.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\assets_qml_Control_MapControl_qml.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\assets_qml_Control_MsgDialog_qml.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\assets_qml_Control_MsgDialog_qml.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\assets_qml_Control_RadialBarShape_qml.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\assets_qml_Control_RadialBarShape_qml.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\assets_qml_Control_Setting_qml.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\assets_qml_Control_Setting_qml.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\assets_qml_Control_TaskControl_qml.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\assets_qml_Control_TaskControl_qml.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\assets_qml_Control_TaskView_qml.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\assets_qml_Control_TaskView_qml.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\assets_qml_Control_TopMessage_qml.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\assets_qml_Control_TopMessage_qml.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\assets_qml_View_LeftView_qml.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\assets_qml_View_LeftView_qml.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\assets_qml_View_MainView_qml.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\assets_qml_View_MainView_qml.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\assets_qml_View_RightView_qml.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\assets_qml_View_RightView_qml.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\assets_qml_main_qml.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\assets_qml_main_qml.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\assets_scripts_frame-parser_js.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\assets_scripts_frame-parser_js.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <CustomBuild Include="temp\moc\moc_predefs.h.cbt">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <ClCompile Include="debug\qmlcache_loader.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\qmlcache_loader.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <CustomBuild Include="debug\qmlcache_loader.cpp.cbt">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="release\qmlcache_loader.cpp.cbt">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\Code\vmsys\assets\translations\de.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="D:\Code\vmsys\assets\translations\en.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="D:\Code\vmsys\assets\translations\es.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="D:\Code\vmsys\assets\translations\ru.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="D:\Code\vmsys\assets\translations\zh.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\themes\1_Flat.json">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\themes\2_Dark.json">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\themes\3_Classic.json">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\themes\4_Midnight.json">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\themes\5_Noir.json">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\themes\6_Mathworks.json">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\messages\Acknowledgements.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+    <CustomBuild Include="assets\qml\Control\AgvAttribute.qml">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="assets\qml\Control\Arrow.qml">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="assets\qml\Control\Battery.qml">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="assets\qml\Control\BoardControlButton.qml">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="assets\qml\Control\ButtonAndEdit.qml">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="assets\qml\Control\ConnectionView.qml">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <None Include="assets\images\Down.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <CustomBuild Include="assets\qml\Control\FlatSwitch.qml">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="assets\qml\Control\GuideBar.qml">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="assets\qml\View\LeftView.qml">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="assets\qml\View\MainView.qml">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="assets\qml\Control\MapControl.qml">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="assets\qml\Control\MsgDialog.qml">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="assets\qml\Control\RadialBarShape.qml">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="assets\qml\View\RightView.qml">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <None Include="assets\fonts\Roboto-Bold.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\fonts\Roboto-Regular.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\fonts\RobotoMono-Bold.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\fonts\RobotoMono-Regular.ttf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <CustomBuild Include="assets\qml\Control\Setting.qml">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="assets\qml\Control\TaskControl.qml">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="assets\qml\Control\TaskView.qml">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="assets\qml\Control\TopMessage.qml">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <None Include="assets\images\Up.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\messages\Welcome_DE.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\messages\Welcome_EN.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\messages\Welcome_ES.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\messages\Welcome_RU.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\messages\Welcome_ZH.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\icons\ac-power.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\icons\accelerometer.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\icons\add.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\icons\apply.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\icons\arrow-right.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\images\arrows.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <QtRcc Include="assets\Music.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <QtRcc Include="assets_Resources_qmlcache.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <None Include="assets\icons\backspace.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\icons\bar.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\icons\battery.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\icons\bug.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\window-border\macOS\close-active.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\window-border\macOS\close-hover.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\window-border\macOS\close-normal.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\icons\close.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\window-border\close.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\icons\code.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\icons\compass.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\icons\connect.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\touchbar\console.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\icons\copy.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\icons\cut.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\touchbar\dashboard.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\icons\dashboard.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\icons\dataset.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\translations\de.qm">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\translations\de.ts">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\icons\delete-item.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\icons\delete.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\icons\developer-board.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\icons\device-hub.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\icons\disconnect.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\images\donate-qr.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\icons\down.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\icons\drag-drop.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\translations\en.qm">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\translations\en.ts">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\icons\end-sequence.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\images\error.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\icons\error.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\translations\es.qm">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\translations\es.ts">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\icons\ethernet.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\images\exit.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\icons\expand.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\icons\fft.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <CustomBuild Include="assets\scripts\frame-parser.js">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <None Include="assets\icons\fullscreen-exit.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\icons\fullscreen.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\window-border\fullscreen.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\icons\gauge.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\icons\gps.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\icons\graphs.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\icons\group.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\icons\gyro.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\icons\heart-broken.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\images\help.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\icons\help.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\icons\hide-all.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\images\home.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\images\icon-small@1x.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\images\icon-small@2x.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\images\icon-window.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\images\icon@1x.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\images\icon@2x.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\icons\info.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\icons\json.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\icons\led.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\icons\link.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\icons\location-off.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\icons\location-on.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <CustomBuild Include="assets\qml\main.qml">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <None Include="assets\icons\map.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\window-border\macOS\maximize-active.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\window-border\macOS\maximize-hover.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\window-border\macOS\maximize-normal.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\window-border\maximize.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\icons\media-next.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\icons\media-pause.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\icons\media-play.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\icons\media-prev.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\window-border\macOS\minimize-active.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\window-border\macOS\minimize-hover.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\window-border\macOS\minimize-normal.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\window-border\minimize.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\images\msg.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\icons\multiplot.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\icons\new.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\icons\open.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\icons\paste.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\images\pause.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\icons\plot.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\icons\points.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\images\power.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\icons\power.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\icons\ram.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\icons\redo.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\icons\refresh.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\icons\registration.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\images\remind.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\icons\restore.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\window-border\restore.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\icons\right.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\translations\ru.qm">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\translations\ru.ts">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\icons\save.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\icons\schedule.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\icons\scroll-bottom.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\icons\scroll-down.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\icons\scroll-top.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\icons\scroll-up.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\icons\search.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\icons\send.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\icons\separator.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\images\set.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\images\setting.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\icons\settings.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\touchbar\setup.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\images\shadow.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\icons\show-all.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\icons\start-sequence.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\icons\template.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\icons\thermometer.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\images\true.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\icons\undo.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\window-border\unmaximize.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\icons\up.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\icons\update.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\icons\usb.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\images\user.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\icons\visibility.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\icons\warning.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\icons\widget.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\images\window-shadow.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\translations\zh.qm">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="assets\translations\zh.ts">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\qml\*.qml">
+      <Filter>Distribution Files</Filter>
+    </None>
+    <None Include="assets\qml\Control\*.qml">
+      <Filter>Distribution Files</Filter>
+    </None>
+    <None Include="assets\qml\View\*.qml">
+      <Filter>Distribution Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="deploy\windows\resources\info.rc" />
+  </ItemGroup>
+</Project>

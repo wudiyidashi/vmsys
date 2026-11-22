@@ -1,0 +1,1070 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{108518F0-896F-3CDB-A627-A352896581F3}</ProjectGuid>
+    <RootNamespace>vmsys</RootNamespace>
+    <Keyword>QtVS_v304</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22000.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion>10.0.22000.0</WindowsTargetPlatformMinVersion>
+  <QtMsBuild Condition="'$(QtMsBuild)'=='' or !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild></PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <PlatformToolset>v143</PlatformToolset>
+    <OutputDirectory>..\_release64\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>temp\obj\</IntermediateDirectory>
+    <PrimaryOutput>vmsys</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <PlatformToolset>v143</PlatformToolset>
+    <OutputDirectory>..\_debug64\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>temp\obj\</IntermediateDirectory>
+    <PrimaryOutput>vmsys</PrimaryOutput>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" /><Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')"><Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." /></Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" /><ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')"><Import Project="$(QtMsBuild)\qt_defaults.props" /></ImportGroup><PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"><OutDir>..\_debug64\</OutDir><IntDir>temp\obj\</IntDir><TargetName>vmsys</TargetName><IgnoreImportLibrary>true</IgnoreImportLibrary></PropertyGroup><PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'"><OutDir>..\_release64\</OutDir><IntDir>temp\obj\</IntDir><TargetName>vmsys</TargetName><IgnoreImportLibrary>true</IgnoreImportLibrary><LinkIncremental>false</LinkIncremental></PropertyGroup><PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"><QtInstall>6.2.4_msvc2019_64</QtInstall><QtModules>core;gui;network;qml;quick;quickcontrols2;widgets;bluetooth;concurrent;opengl;multimedia;printsupport;serialport;svg;xml</QtModules></PropertyGroup><PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Release|x64'"><QtInstall>6.2.4_msvc2019_64</QtInstall><QtModules>core;gui;network;qml;quick;quickcontrols2;widgets;bluetooth;concurrent;opengl;multimedia;printsupport;serialport;svg;xml</QtModules></PropertyGroup><ImportGroup Condition="Exists('$(QtMsBuild)\qt.props')"><Import Project="$(QtMsBuild)\qt.props" /></ImportGroup>
+  
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;libs;libs\spdlog\include;src;temp\moc;/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -permissive- -Zc:__cplusplus -Zc:externConstexpr -utf-8 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>temp\obj\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <ObjectFileName>temp\obj\</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;QT_DISABLE_DEPRECATED_BEFORE=0x050F00;SERIAL_STUDIO_INCLUDE_MOC;QTCSV_STATIC_LIB;_USE_MATH_DEFINES;NDEBUG;QT_NO_DEBUG;QT_QMLMODELS_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName></ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    <MultiProcessorCompilation>true</MultiProcessorCompilation></ClCompile>
+    <Link>
+      <AdditionalDependencies>$(QTDIR)\lib\Qt6QmlModels.lib;$(QTDIR)\lib\Qt6EntryPoint.lib;shell32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkIncremental>false</LinkIncremental>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)\vmsys.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;QT_DISABLE_DEPRECATED_BEFORE=0x050F00;SERIAL_STUDIO_INCLUDE_MOC;QTCSV_STATIC_LIB;_USE_MATH_DEFINES;NDEBUG;QT_NO_DEBUG;QT_QMLMODELS_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  <QtMoc><CompilerFlavor>msvc</CompilerFlavor><Include>./temp/moc/moc_predefs.h</Include><ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription><DynamicSource>output</DynamicSource><QtMocDir>temp\moc</QtMocDir><QtMocFileName>moc_%(Filename).cpp</QtMocFileName></QtMoc><QtRcc><InitFuncName>assets_Resources_qmlcache</InitFuncName><ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription><Compression>default</Compression><QtRccDir>temp\rcc</QtRccDir><QtRccFileName>qrc_%(Filename).cpp</QtRccFileName></QtRcc></ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;libs;libs\spdlog\include;src;temp\moc;/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -permissive- -Zc:__cplusplus -Zc:externConstexpr -utf-8 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>temp\obj\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <ObjectFileName>temp\obj\</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;QT_DISABLE_DEPRECATED_BEFORE=0x050F00;SERIAL_STUDIO_INCLUDE_MOC;QTCSV_STATIC_LIB;_USE_MATH_DEFINES;QT_QMLMODELS_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    <MultiProcessorCompilation>true</MultiProcessorCompilation></ClCompile>
+    <Link>
+      <AdditionalDependencies>$(QTDIR)\lib\Qt6QmlModelsd.lib;$(QTDIR)\lib\Qt6EntryPointd.lib;shell32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <OutputFile>$(OutDir)\vmsys.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;QT_DISABLE_DEPRECATED_BEFORE=0x050F00;SERIAL_STUDIO_INCLUDE_MOC;QTCSV_STATIC_LIB;_USE_MATH_DEFINES;QT_QMLMODELS_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  <QtMoc><CompilerFlavor>msvc</CompilerFlavor><Include>./temp/moc/moc_predefs.h</Include><ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription><DynamicSource>output</DynamicSource><QtMocDir>temp\moc</QtMocDir><QtMocFileName>moc_%(Filename).cpp</QtMocFileName></QtMoc><QtRcc><Compression>default</Compression><InitFuncName>assets_Resources_qmlcache</InitFuncName><ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription><QtRccDir>temp\rcc</QtRccDir><QtRccFileName>qrc_%(Filename).cpp</QtRccFileName></QtRcc></ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Qml\ArrowHeads.cpp" />
+    <ClCompile Include="src\Robokit\BoardControl\Autodoor.cpp" />
+    <ClCompile Include="src\Robokit\BoardControl\Battery.cpp" />
+    <ClCompile Include="src\Robokit\BoardControl\BoardManager.cpp" />
+    <ClCompile Include="src\Misc\CRC.cpp" />
+    <ClCompile Include="src\Mission\Charge.cpp" />
+    <ClCompile Include="src\Qml\CppBridge.cpp" />
+    <ClCompile Include="src\IO\DataProcessUtl.cpp" />
+    <ClCompile Include="src\Qml\EleCell.cpp" />
+    <ClCompile Include="src\Mission\Jack.cpp" />
+    <ClCompile Include="src\Robokit\BoardControl\Lift.cpp" />
+    <ClCompile Include="src\Misc\Log.cpp" />
+    <ClCompile Include="src\Robokit\Map\MapManager.cpp" />
+    <ClCompile Include="src\Robokit\Map\MapUnit.cpp" />
+    <ClCompile Include="src\Robokit\BoardControl\McuBoard.cpp" />
+    <ClCompile Include="src\Mission\MissionBase.cpp" />
+    <ClCompile Include="src\Mission\MissionManager.cpp" />
+    <ClCompile Include="src\Misc\ModuleManager.cpp" />
+    <ClCompile Include="src\Misc\Music.cpp" />
+    <ClCompile Include="src\Misc\QIniConfig.cpp" />
+    <ClCompile Include="src\Robokit\RobokitApi\RobProtocol.cpp" />
+    <ClCompile Include="src\Robokit\RobokitManager.cpp" />
+    <ClCompile Include="src\Robokit\RobokitApi\RobotBase.cpp" />
+    <ClCompile Include="src\Robokit\RobokitApi\RobotConfig.cpp" />
+    <ClCompile Include="src\Robokit\RobokitApi\RobotControl.cpp" />
+    <ClCompile Include="src\Mission\RobotMove.cpp" />
+    <ClCompile Include="src\Mission\RobotMoveList.cpp" />
+    <ClCompile Include="src\Robokit\RobokitApi\RobotStatus.cpp" />
+    <ClCompile Include="src\Robokit\RobokitApi\RobotTask.cpp" />
+    <ClCompile Include="src\Server\StatusManager.cpp" />
+    <ClCompile Include="src\IO\TcpSocketClient.cpp" />
+    <ClCompile Include="src\IO\TcpSocketServer.cpp" />
+    <ClCompile Include="src\Misc\ThemeManager.cpp" />
+    <ClCompile Include="src\IO\ThreadHandle.cpp" />
+    <ClCompile Include="src\Misc\TimerEvents.cpp" />
+    <ClCompile Include="src\Misc\Translator.cpp" />
+    <ClCompile Include="src\Misc\Utilities.cpp" />
+    <ClCompile Include="src\main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\AppInfo.h" />
+    <QtMoc Include="src\Qml\ArrowHeads.h">
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtMoc>
+    <QtMoc Include="src\Robokit\BoardControl\Autodoor.h">
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtMoc>
+    <QtMoc Include="src\Robokit\BoardControl\Battery.h">
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtMoc>
+    <QtMoc Include="src\Robokit\BoardControl\BoardManager.h">
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtMoc>
+    <ClInclude Include="src\Misc\CRC.h" />
+    <ClInclude Include="src\Mission\Charge.h" />
+    <QtMoc Include="src\Qml\CppBridge.h">
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtMoc>
+    <ClInclude Include="src\IO\DataProcessUtl.h" />
+    <ClInclude Include="src\DataTypes.h" />
+    <QtMoc Include="src\Qml\EleCell.h">
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtMoc>
+    <ClInclude Include="src\Mission\Jack.h" />
+    <QtMoc Include="src\Robokit\BoardControl\Lift.h">
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtMoc>
+    <QtMoc Include="src\Misc\Log.h">
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtMoc>
+    <ClInclude Include="src\Robokit\Map\MapElements.h" />
+    <QtMoc Include="src\Robokit\Map\MapManager.h">
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtMoc>
+    <QtMoc Include="src\Robokit\Map\MapUnit.h">
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtMoc>
+    <QtMoc Include="src\Robokit\BoardControl\McuBoard.h">
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtMoc>
+    <QtMoc Include="src\Mission\MissionBase.h">
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtMoc>
+    <QtMoc Include="src\Mission\MissionManager.h">
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtMoc>
+    <QtMoc Include="src\Misc\ModuleManager.h">
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtMoc>
+    <QtMoc Include="src\Misc\Music.h">
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtMoc>
+    <ClInclude Include="src\Misc\QIniConfig.h" />
+    <QtMoc Include="src\Robokit\RobokitApi\RobProtocol.h">
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtMoc>
+    <QtMoc Include="src\Robokit\RobokitManager.h">
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtMoc>
+    <QtMoc Include="src\Robokit\RobokitApi\RobotBase.h">
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtMoc>
+    <QtMoc Include="src\Robokit\RobokitApi\RobotConfig.h">
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtMoc>
+    <QtMoc Include="src\Robokit\RobokitApi\RobotControl.h">
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtMoc>
+    <ClInclude Include="src\Mission\RobotMove.h" />
+    <ClInclude Include="src\Mission\RobotMoveList.h" />
+    <QtMoc Include="src\Robokit\RobokitApi\RobotStatus.h">
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtMoc>
+    <QtMoc Include="src\Robokit\RobokitApi\RobotTask.h">
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtMoc>
+    <ClInclude Include="src\Robokit\RobokitApi\SCHeadData.h" />
+    <QtMoc Include="src\Server\StatusManager.h">
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtMoc>
+    <QtMoc Include="src\IO\TcpSocketClient.h">
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtMoc>
+    <QtMoc Include="src\IO\TcpSocketServer.h">
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtMoc>
+    <QtMoc Include="src\Misc\ThemeManager.h">
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtMoc>
+    <ClInclude Include="src\IO\ThreadHandle.h" />
+    <QtMoc Include="src\Misc\TimerEvents.h">
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtMoc>
+    <QtMoc Include="src\Misc\Translator.h">
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtMoc>
+    <QtMoc Include="src\Misc\Utilities.h">
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="debug\assets_qml_Control_AgvAttribute_qml.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\assets_qml_Control_AgvAttribute_qml.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\assets_qml_Control_Arrow_qml.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\assets_qml_Control_Arrow_qml.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\assets_qml_Control_Battery_qml.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\assets_qml_Control_Battery_qml.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\assets_qml_Control_BoardControlButton_qml.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\assets_qml_Control_BoardControlButton_qml.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\assets_qml_Control_ButtonAndEdit_qml.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\assets_qml_Control_ButtonAndEdit_qml.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\assets_qml_Control_ConnectionView_qml.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\assets_qml_Control_ConnectionView_qml.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\assets_qml_Control_FlatSwitch_qml.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\assets_qml_Control_FlatSwitch_qml.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\assets_qml_Control_GuideBar_qml.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\assets_qml_Control_GuideBar_qml.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\assets_qml_Control_MapControl_qml.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\assets_qml_Control_MapControl_qml.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\assets_qml_Control_MsgDialog_qml.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\assets_qml_Control_MsgDialog_qml.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\assets_qml_Control_RadialBarShape_qml.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\assets_qml_Control_RadialBarShape_qml.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\assets_qml_Control_Setting_qml.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\assets_qml_Control_Setting_qml.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\assets_qml_Control_TaskControl_qml.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\assets_qml_Control_TaskControl_qml.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\assets_qml_Control_TaskView_qml.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\assets_qml_Control_TaskView_qml.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\assets_qml_Control_TopMessage_qml.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\assets_qml_Control_TopMessage_qml.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\assets_qml_View_LeftView_qml.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\assets_qml_View_LeftView_qml.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\assets_qml_View_MainView_qml.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\assets_qml_View_MainView_qml.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\assets_qml_View_RightView_qml.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\assets_qml_View_RightView_qml.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\assets_qml_main_qml.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\assets_qml_main_qml.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\assets_scripts_frame-parser_js.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\assets_scripts_frame-parser_js.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <CustomBuild Include="temp\moc\moc_predefs.h.cbt">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">@echo generating temp/moc/moc_predefs.h
+if errorlevel 1 goto VCEnd
+@cl -Bx"$(QTDIR)\bin\qmake.exe" -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -permissive- -Zc:__cplusplus -Zc:externConstexpr -O2 -MD -std:c++17 -utf-8 -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E $(QTDIR)\mkspecs\features\data\dummy.cpp 2&gt;NUL &gt;temp\moc\moc_predefs.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generate moc_predefs.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">temp\moc\moc_predefs.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">@echo generating temp/moc/moc_predefs.h
+if errorlevel 1 goto VCEnd
+@cl -Bx"$(QTDIR)\bin\qmake.exe" -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -permissive- -Zc:__cplusplus -Zc:externConstexpr -Zi -MDd -std:c++17 -utf-8 -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E $(QTDIR)\mkspecs\features\data\dummy.cpp 2&gt;NUL &gt;temp\moc\moc_predefs.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generate moc_predefs.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">temp\moc\moc_predefs.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClCompile Include="debug\qmlcache_loader.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\qmlcache_loader.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <CustomBuild Include="debug\qmlcache_loader.cpp.cbt">
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">assets\Resources.qrc;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\qmlcachegen.exe --resource-file-mapping="./assets/Resources.qrc=./assets_Resources_qmlcache.qrc" -o debug\qmlcache_loader.cpp assets\Resources.qrc</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">qmlcachengen_loader debug/qmlcache_loader.cpp</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\qmlcache_loader.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="release\qmlcache_loader.cpp.cbt">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">assets\Resources.qrc;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\qmlcachegen.exe --resource-file-mapping="./assets/Resources.qrc=./assets_Resources_qmlcache.qrc" -o release\qmlcache_loader.cpp assets\Resources.qrc</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qmlcachengen_loader release/qmlcache_loader.cpp</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\qmlcache_loader.cpp;%(Outputs)</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </CustomBuild>
+    
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".\assets\translations\de.ts" />
+    <None Include=".\assets\translations\en.ts" />
+    <None Include=".\assets\translations\es.ts" />
+    <None Include=".\assets\translations\ru.ts" />
+    <None Include=".\assets\translations\zh.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\themes\1_Flat.json" />
+    <None Include="assets\themes\2_Dark.json" />
+    <None Include="assets\themes\3_Classic.json" />
+    <None Include="assets\themes\4_Midnight.json" />
+    <None Include="assets\themes\5_Noir.json" />
+    <None Include="assets\themes\6_Mathworks.json" />
+    <None Include="assets\messages\Acknowledgements.txt" />
+    <CustomBuild Include="assets\qml\Control\AgvAttribute.qml">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">assets\qml\Control\AgvAttribute.qml;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\qmlcachegen.exe --resource=./assets/Resources.qrc -o release\assets_qml_Control_AgvAttribute_qml.cpp assets\qml\Control\AgvAttribute.qml</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qmlcachegen assets/qml/Control/AgvAttribute.qml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\assets_qml_Control_AgvAttribute_qml.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">assets\qml\Control\AgvAttribute.qml;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\qmlcachegen.exe --resource=./assets/Resources.qrc -o debug\assets_qml_Control_AgvAttribute_qml.cpp assets\qml\Control\AgvAttribute.qml</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">qmlcachegen assets/qml/Control/AgvAttribute.qml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\assets_qml_Control_AgvAttribute_qml.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="assets\qml\Control\Arrow.qml">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">assets\qml\Control\Arrow.qml;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\qmlcachegen.exe --resource=./assets/Resources.qrc -o release\assets_qml_Control_Arrow_qml.cpp assets\qml\Control\Arrow.qml</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qmlcachegen assets/qml/Control/Arrow.qml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\assets_qml_Control_Arrow_qml.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">assets\qml\Control\Arrow.qml;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\qmlcachegen.exe --resource=./assets/Resources.qrc -o debug\assets_qml_Control_Arrow_qml.cpp assets\qml\Control\Arrow.qml</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">qmlcachegen assets/qml/Control/Arrow.qml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\assets_qml_Control_Arrow_qml.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="assets\qml\Control\Battery.qml">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">assets\qml\Control\Battery.qml;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\qmlcachegen.exe --resource=./assets/Resources.qrc -o release\assets_qml_Control_Battery_qml.cpp assets\qml\Control\Battery.qml</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qmlcachegen assets/qml/Control/Battery.qml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\assets_qml_Control_Battery_qml.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">assets\qml\Control\Battery.qml;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\qmlcachegen.exe --resource=./assets/Resources.qrc -o debug\assets_qml_Control_Battery_qml.cpp assets\qml\Control\Battery.qml</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">qmlcachegen assets/qml/Control/Battery.qml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\assets_qml_Control_Battery_qml.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="assets\qml\Control\BoardControlButton.qml">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">assets\qml\Control\BoardControlButton.qml;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\qmlcachegen.exe --resource=./assets/Resources.qrc -o release\assets_qml_Control_BoardControlButton_qml.cpp assets\qml\Control\BoardControlButton.qml</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qmlcachegen assets/qml/Control/BoardControlButton.qml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\assets_qml_Control_BoardControlButton_qml.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">assets\qml\Control\BoardControlButton.qml;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\qmlcachegen.exe --resource=./assets/Resources.qrc -o debug\assets_qml_Control_BoardControlButton_qml.cpp assets\qml\Control\BoardControlButton.qml</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">qmlcachegen assets/qml/Control/BoardControlButton.qml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\assets_qml_Control_BoardControlButton_qml.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="assets\qml\Control\ButtonAndEdit.qml">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">assets\qml\Control\ButtonAndEdit.qml;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\qmlcachegen.exe --resource=./assets/Resources.qrc -o release\assets_qml_Control_ButtonAndEdit_qml.cpp assets\qml\Control\ButtonAndEdit.qml</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qmlcachegen assets/qml/Control/ButtonAndEdit.qml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\assets_qml_Control_ButtonAndEdit_qml.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">assets\qml\Control\ButtonAndEdit.qml;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\qmlcachegen.exe --resource=./assets/Resources.qrc -o debug\assets_qml_Control_ButtonAndEdit_qml.cpp assets\qml\Control\ButtonAndEdit.qml</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">qmlcachegen assets/qml/Control/ButtonAndEdit.qml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\assets_qml_Control_ButtonAndEdit_qml.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="assets\qml\Control\ConnectionView.qml">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">assets\qml\Control\ConnectionView.qml;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\qmlcachegen.exe --resource=./assets/Resources.qrc -o release\assets_qml_Control_ConnectionView_qml.cpp assets\qml\Control\ConnectionView.qml</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qmlcachegen assets/qml/Control/ConnectionView.qml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\assets_qml_Control_ConnectionView_qml.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">assets\qml\Control\ConnectionView.qml;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\qmlcachegen.exe --resource=./assets/Resources.qrc -o debug\assets_qml_Control_ConnectionView_qml.cpp assets\qml\Control\ConnectionView.qml</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">qmlcachegen assets/qml/Control/ConnectionView.qml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\assets_qml_Control_ConnectionView_qml.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <None Include="assets\images\Down.png" />
+    <CustomBuild Include="assets\qml\Control\FlatSwitch.qml">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">assets\qml\Control\FlatSwitch.qml;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\qmlcachegen.exe --resource=./assets/Resources.qrc -o release\assets_qml_Control_FlatSwitch_qml.cpp assets\qml\Control\FlatSwitch.qml</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qmlcachegen assets/qml/Control/FlatSwitch.qml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\assets_qml_Control_FlatSwitch_qml.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">assets\qml\Control\FlatSwitch.qml;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\qmlcachegen.exe --resource=./assets/Resources.qrc -o debug\assets_qml_Control_FlatSwitch_qml.cpp assets\qml\Control\FlatSwitch.qml</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">qmlcachegen assets/qml/Control/FlatSwitch.qml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\assets_qml_Control_FlatSwitch_qml.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="assets\qml\Control\GuideBar.qml">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">assets\qml\Control\GuideBar.qml;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\qmlcachegen.exe --resource=./assets/Resources.qrc -o release\assets_qml_Control_GuideBar_qml.cpp assets\qml\Control\GuideBar.qml</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qmlcachegen assets/qml/Control/GuideBar.qml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\assets_qml_Control_GuideBar_qml.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">assets\qml\Control\GuideBar.qml;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\qmlcachegen.exe --resource=./assets/Resources.qrc -o debug\assets_qml_Control_GuideBar_qml.cpp assets\qml\Control\GuideBar.qml</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">qmlcachegen assets/qml/Control/GuideBar.qml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\assets_qml_Control_GuideBar_qml.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="assets\qml\View\LeftView.qml">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">assets\qml\View\LeftView.qml;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\qmlcachegen.exe --resource=./assets/Resources.qrc -o release\assets_qml_View_LeftView_qml.cpp assets\qml\View\LeftView.qml</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qmlcachegen assets/qml/View/LeftView.qml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\assets_qml_View_LeftView_qml.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">assets\qml\View\LeftView.qml;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\qmlcachegen.exe --resource=./assets/Resources.qrc -o debug\assets_qml_View_LeftView_qml.cpp assets\qml\View\LeftView.qml</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">qmlcachegen assets/qml/View/LeftView.qml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\assets_qml_View_LeftView_qml.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="assets\qml\View\MainView.qml">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">assets\qml\View\MainView.qml;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\qmlcachegen.exe --resource=./assets/Resources.qrc -o release\assets_qml_View_MainView_qml.cpp assets\qml\View\MainView.qml</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qmlcachegen assets/qml/View/MainView.qml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\assets_qml_View_MainView_qml.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">assets\qml\View\MainView.qml;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\qmlcachegen.exe --resource=./assets/Resources.qrc -o debug\assets_qml_View_MainView_qml.cpp assets\qml\View\MainView.qml</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">qmlcachegen assets/qml/View/MainView.qml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\assets_qml_View_MainView_qml.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="assets\qml\Control\MapControl.qml">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">assets\qml\Control\MapControl.qml;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\qmlcachegen.exe --resource=./assets/Resources.qrc -o release\assets_qml_Control_MapControl_qml.cpp assets\qml\Control\MapControl.qml</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qmlcachegen assets/qml/Control/MapControl.qml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\assets_qml_Control_MapControl_qml.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">assets\qml\Control\MapControl.qml;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\qmlcachegen.exe --resource=./assets/Resources.qrc -o debug\assets_qml_Control_MapControl_qml.cpp assets\qml\Control\MapControl.qml</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">qmlcachegen assets/qml/Control/MapControl.qml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\assets_qml_Control_MapControl_qml.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="assets\qml\Control\MsgDialog.qml">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">assets\qml\Control\MsgDialog.qml;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\qmlcachegen.exe --resource=./assets/Resources.qrc -o release\assets_qml_Control_MsgDialog_qml.cpp assets\qml\Control\MsgDialog.qml</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qmlcachegen assets/qml/Control/MsgDialog.qml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\assets_qml_Control_MsgDialog_qml.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">assets\qml\Control\MsgDialog.qml;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\qmlcachegen.exe --resource=./assets/Resources.qrc -o debug\assets_qml_Control_MsgDialog_qml.cpp assets\qml\Control\MsgDialog.qml</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">qmlcachegen assets/qml/Control/MsgDialog.qml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\assets_qml_Control_MsgDialog_qml.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="assets\qml\Control\RadialBarShape.qml">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">assets\qml\Control\RadialBarShape.qml;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\qmlcachegen.exe --resource=./assets/Resources.qrc -o release\assets_qml_Control_RadialBarShape_qml.cpp assets\qml\Control\RadialBarShape.qml</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qmlcachegen assets/qml/Control/RadialBarShape.qml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\assets_qml_Control_RadialBarShape_qml.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">assets\qml\Control\RadialBarShape.qml;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\qmlcachegen.exe --resource=./assets/Resources.qrc -o debug\assets_qml_Control_RadialBarShape_qml.cpp assets\qml\Control\RadialBarShape.qml</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">qmlcachegen assets/qml/Control/RadialBarShape.qml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\assets_qml_Control_RadialBarShape_qml.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="assets\qml\View\RightView.qml">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">assets\qml\View\RightView.qml;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\qmlcachegen.exe --resource=./assets/Resources.qrc -o release\assets_qml_View_RightView_qml.cpp assets\qml\View\RightView.qml</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qmlcachegen assets/qml/View/RightView.qml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\assets_qml_View_RightView_qml.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">assets\qml\View\RightView.qml;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\qmlcachegen.exe --resource=./assets/Resources.qrc -o debug\assets_qml_View_RightView_qml.cpp assets\qml\View\RightView.qml</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">qmlcachegen assets/qml/View/RightView.qml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\assets_qml_View_RightView_qml.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <None Include="assets\fonts\Roboto-Bold.ttf" />
+    <None Include="assets\fonts\Roboto-Regular.ttf" />
+    <None Include="assets\fonts\RobotoMono-Bold.ttf" />
+    <None Include="assets\fonts\RobotoMono-Regular.ttf" />
+    <CustomBuild Include="assets\qml\Control\Setting.qml">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">assets\qml\Control\Setting.qml;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\qmlcachegen.exe --resource=./assets/Resources.qrc -o release\assets_qml_Control_Setting_qml.cpp assets\qml\Control\Setting.qml</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qmlcachegen assets/qml/Control/Setting.qml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\assets_qml_Control_Setting_qml.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">assets\qml\Control\Setting.qml;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\qmlcachegen.exe --resource=./assets/Resources.qrc -o debug\assets_qml_Control_Setting_qml.cpp assets\qml\Control\Setting.qml</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">qmlcachegen assets/qml/Control/Setting.qml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\assets_qml_Control_Setting_qml.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="assets\qml\Control\TaskControl.qml">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">assets\qml\Control\TaskControl.qml;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\qmlcachegen.exe --resource=./assets/Resources.qrc -o release\assets_qml_Control_TaskControl_qml.cpp assets\qml\Control\TaskControl.qml</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qmlcachegen assets/qml/Control/TaskControl.qml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\assets_qml_Control_TaskControl_qml.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">assets\qml\Control\TaskControl.qml;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\qmlcachegen.exe --resource=./assets/Resources.qrc -o debug\assets_qml_Control_TaskControl_qml.cpp assets\qml\Control\TaskControl.qml</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">qmlcachegen assets/qml/Control/TaskControl.qml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\assets_qml_Control_TaskControl_qml.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="assets\qml\Control\TaskView.qml">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">assets\qml\Control\TaskView.qml;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\qmlcachegen.exe --resource=./assets/Resources.qrc -o release\assets_qml_Control_TaskView_qml.cpp assets\qml\Control\TaskView.qml</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qmlcachegen assets/qml/Control/TaskView.qml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\assets_qml_Control_TaskView_qml.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">assets\qml\Control\TaskView.qml;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\qmlcachegen.exe --resource=./assets/Resources.qrc -o debug\assets_qml_Control_TaskView_qml.cpp assets\qml\Control\TaskView.qml</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">qmlcachegen assets/qml/Control/TaskView.qml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\assets_qml_Control_TaskView_qml.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="assets\qml\Control\TopMessage.qml">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">assets\qml\Control\TopMessage.qml;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\qmlcachegen.exe --resource=./assets/Resources.qrc -o release\assets_qml_Control_TopMessage_qml.cpp assets\qml\Control\TopMessage.qml</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qmlcachegen assets/qml/Control/TopMessage.qml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\assets_qml_Control_TopMessage_qml.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">assets\qml\Control\TopMessage.qml;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\qmlcachegen.exe --resource=./assets/Resources.qrc -o debug\assets_qml_Control_TopMessage_qml.cpp assets\qml\Control\TopMessage.qml</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">qmlcachegen assets/qml/Control/TopMessage.qml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\assets_qml_Control_TopMessage_qml.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <None Include="assets\images\Up.png" />
+    <None Include="assets\messages\Welcome_DE.txt" />
+    <None Include="assets\messages\Welcome_EN.txt" />
+    <None Include="assets\messages\Welcome_ES.txt" />
+    <None Include="assets\messages\Welcome_RU.txt" />
+    <None Include="assets\messages\Welcome_ZH.txt" />
+    <None Include="assets\icons\ac-power.svg" />
+    <None Include="assets\icons\accelerometer.svg" />
+    <None Include="assets\icons\add.svg" />
+    <None Include="assets\icons\apply.svg" />
+    <None Include="assets\icons\arrow-right.svg" />
+    <None Include="assets\images\arrows.png" />
+    <QtRcc Include="assets\Music.qrc">
+      <InitFuncName>Music</InitFuncName>
+    </QtRcc>
+    <QtRcc Include="assets_Resources_qmlcache.qrc">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtRcc>
+    <None Include="assets\icons\backspace.svg" />
+    <None Include="assets\icons\bar.svg" />
+    <None Include="assets\icons\battery.svg" />
+    <None Include="assets\icons\bug.svg" />
+    <None Include="assets\window-border\macOS\close-active.svg" />
+    <None Include="assets\window-border\macOS\close-hover.svg" />
+    <None Include="assets\window-border\macOS\close-normal.svg" />
+    <None Include="assets\icons\close.svg" />
+    <None Include="assets\window-border\close.svg" />
+    <None Include="assets\icons\code.svg" />
+    <None Include="assets\icons\compass.svg" />
+    <None Include="assets\icons\connect.svg" />
+    <None Include="assets\touchbar\console.png" />
+    <None Include="assets\icons\copy.svg" />
+    <None Include="assets\icons\cut.svg" />
+    <None Include="assets\touchbar\dashboard.png" />
+    <None Include="assets\icons\dashboard.svg" />
+    <None Include="assets\icons\dataset.svg" />
+    <None Include="assets\translations\de.qm" />
+    <None Include="assets\translations\de.ts" />
+    <None Include="assets\icons\delete-item.svg" />
+    <None Include="assets\icons\delete.svg" />
+    <None Include="assets\icons\developer-board.svg" />
+    <None Include="assets\icons\device-hub.svg" />
+    <None Include="assets\icons\disconnect.svg" />
+    <None Include="assets\images\donate-qr.svg" />
+    <None Include="assets\icons\down.svg" />
+    <None Include="assets\icons\drag-drop.svg" />
+    <None Include="assets\translations\en.qm" />
+    <None Include="assets\translations\en.ts" />
+    <None Include="assets\icons\end-sequence.svg" />
+    <None Include="assets\images\error.png" />
+    <None Include="assets\icons\error.svg" />
+    <None Include="assets\translations\es.qm" />
+    <None Include="assets\translations\es.ts" />
+    <None Include="assets\icons\ethernet.svg" />
+    <None Include="assets\images\exit.png" />
+    <None Include="assets\icons\expand.svg" />
+    <None Include="assets\icons\fft.svg" />
+    <CustomBuild Include="assets\scripts\frame-parser.js">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">assets\scripts\frame-parser.js;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\qmlcachegen.exe --resource=./assets/Resources.qrc -o release\assets_scripts_frame-parser_js.cpp assets\scripts\frame-parser.js</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qmlcachegen assets/scripts/frame-parser.js</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\assets_scripts_frame-parser_js.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">assets\scripts\frame-parser.js;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\qmlcachegen.exe --resource=./assets/Resources.qrc -o debug\assets_scripts_frame-parser_js.cpp assets\scripts\frame-parser.js</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">qmlcachegen assets/scripts/frame-parser.js</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\assets_scripts_frame-parser_js.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <None Include="assets\icons\fullscreen-exit.svg" />
+    <None Include="assets\icons\fullscreen.svg" />
+    <None Include="assets\window-border\fullscreen.svg" />
+    <None Include="assets\icons\gauge.svg" />
+    <None Include="assets\icons\gps.svg" />
+    <None Include="assets\icons\graphs.svg" />
+    <None Include="assets\icons\group.svg" />
+    <None Include="assets\icons\gyro.svg" />
+    <None Include="assets\icons\heart-broken.svg" />
+    <None Include="assets\images\help.png" />
+    <None Include="assets\icons\help.svg" />
+    <None Include="assets\icons\hide-all.svg" />
+    <None Include="assets\images\home.png" />
+    <None Include="assets\images\icon-small@1x.png" />
+    <None Include="assets\images\icon-small@2x.png" />
+    <None Include="assets\images\icon-window.svg" />
+    <None Include="assets\images\icon@1x.png" />
+    <None Include="assets\images\icon@2x.png" />
+    <None Include="assets\icons\info.svg" />
+    <None Include="assets\icons\json.svg" />
+    <None Include="assets\icons\led.svg" />
+    <None Include="assets\icons\link.svg" />
+    <None Include="assets\icons\location-off.svg" />
+    <None Include="assets\icons\location-on.svg" />
+    <CustomBuild Include="assets\qml\main.qml">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">assets\qml\main.qml;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\qmlcachegen.exe --resource=./assets/Resources.qrc -o release\assets_qml_main_qml.cpp assets\qml\main.qml</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qmlcachegen assets/qml/main.qml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\assets_qml_main_qml.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">assets\qml\main.qml;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\qmlcachegen.exe --resource=./assets/Resources.qrc -o debug\assets_qml_main_qml.cpp assets\qml\main.qml</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">qmlcachegen assets/qml/main.qml</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\assets_qml_main_qml.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <None Include="assets\icons\map.svg" />
+    <None Include="assets\window-border\macOS\maximize-active.svg" />
+    <None Include="assets\window-border\macOS\maximize-hover.svg" />
+    <None Include="assets\window-border\macOS\maximize-normal.svg" />
+    <None Include="assets\window-border\maximize.svg" />
+    <None Include="assets\icons\media-next.svg" />
+    <None Include="assets\icons\media-pause.svg" />
+    <None Include="assets\icons\media-play.svg" />
+    <None Include="assets\icons\media-prev.svg" />
+    <None Include="assets\window-border\macOS\minimize-active.svg" />
+    <None Include="assets\window-border\macOS\minimize-hover.svg" />
+    <None Include="assets\window-border\macOS\minimize-normal.svg" />
+    <None Include="assets\window-border\minimize.svg" />
+    <None Include="assets\images\msg.png" />
+    <None Include="assets\icons\multiplot.svg" />
+    <None Include="assets\icons\new.svg" />
+    <None Include="assets\icons\open.svg" />
+    <None Include="assets\icons\paste.svg" />
+    <None Include="assets\images\pause.png" />
+    <None Include="assets\icons\plot.svg" />
+    <None Include="assets\icons\points.svg" />
+    <None Include="assets\images\power.png" />
+    <None Include="assets\icons\power.svg" />
+    <None Include="assets\icons\ram.svg" />
+    <None Include="assets\icons\redo.svg" />
+    <None Include="assets\icons\refresh.svg" />
+    <None Include="assets\icons\registration.svg" />
+    <None Include="assets\images\remind.png" />
+    <None Include="assets\icons\restore.svg" />
+    <None Include="assets\window-border\restore.svg" />
+    <None Include="assets\icons\right.svg" />
+    <None Include="assets\translations\ru.qm" />
+    <None Include="assets\translations\ru.ts" />
+    <None Include="assets\icons\save.svg" />
+    <None Include="assets\icons\schedule.svg" />
+    <None Include="assets\icons\scroll-bottom.svg" />
+    <None Include="assets\icons\scroll-down.svg" />
+    <None Include="assets\icons\scroll-top.svg" />
+    <None Include="assets\icons\scroll-up.svg" />
+    <None Include="assets\icons\search.svg" />
+    <None Include="assets\icons\send.svg" />
+    <None Include="assets\icons\separator.svg" />
+    <None Include="assets\images\set.png" />
+    <None Include="assets\images\setting.png" />
+    <None Include="assets\icons\settings.svg" />
+    <None Include="assets\touchbar\setup.png" />
+    <None Include="assets\images\shadow.png" />
+    <None Include="assets\icons\show-all.svg" />
+    <None Include="assets\icons\start-sequence.svg" />
+    <None Include="assets\icons\template.svg" />
+    <None Include="assets\icons\thermometer.svg" />
+    <None Include="assets\images\true.png" />
+    <None Include="assets\icons\undo.svg" />
+    <None Include="assets\window-border\unmaximize.svg" />
+    <None Include="assets\icons\up.svg" />
+    <None Include="assets\icons\update.svg" />
+    <None Include="assets\icons\usb.svg" />
+    <None Include="assets\images\user.png" />
+    <None Include="assets\icons\visibility.svg" />
+    <None Include="assets\icons\warning.svg" />
+    <None Include="assets\icons\widget.svg" />
+    <None Include="assets\images\window-shadow.png" />
+    <None Include="assets\translations\zh.qm" />
+    <None Include="assets\translations\zh.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\qml\*.qml" />
+    <None Include="assets\qml\Control\*.qml" />
+    <None Include="assets\qml\View\*.qml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="deploy\windows\resources\info.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" /><ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')"><Import Project="$(QtMsBuild)\qt.targets" /></ImportGroup>
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

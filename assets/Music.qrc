@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/music">
+        <file alias="astern.wav">../deploy/windows/resources/music/astern.wav</file>
+        <file alias="block.wav">../deploy/windows/resources/music/block.wav</file>
+        <file alias="collision.wav">../deploy/windows/resources/music/collision.wav</file>
+        <file alias="error.wav">../deploy/windows/resources/music/error.wav</file>
+        <file alias="lowBattery.wav">../deploy/windows/resources/music/lowBattery.wav</file>
+        <file alias="navigation.wav">../deploy/windows/resources/music/navigation.wav</file>
+        <file alias="reached.wav">../deploy/windows/resources/music/reached.wav</file>
+        <file alias="rotate.wav">../deploy/windows/resources/music/rotate.wav</file>
+        <file alias="taskfinished.wav">../deploy/windows/resources/music/taskfinished.wav</file>
+        <file alias="turnleft.wav">../deploy/windows/resources/music/turnleft.wav</file>
+        <file alias="turnright.wav">../deploy/windows/resources/music/turnright.wav</file>
+    </qresource>
+</RCC>
